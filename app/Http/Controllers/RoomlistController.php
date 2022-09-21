@@ -16,8 +16,6 @@ class RoomlistController extends Controller
     public function __construct(Excel $excel)
     {
         $this->excel = $excel;
-
-        $user = DB::table('__t_users')->where('adminsys', )
     }
 
     public function roomlist()
