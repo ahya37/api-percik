@@ -8,6 +8,7 @@ use App\Exports\RoomlistExportExcel;
 use App\Exports\ManifestExportExcel;
 use Maatwebsite\Excel\Excel;
 use DB;
+use PDF;
 use App\Providers\Globalprovider;
 
 class RoomlistController extends Controller
@@ -191,6 +192,12 @@ class RoomlistController extends Controller
 
         return $this->excel->download(new ManifestExportExcel($result, $gf),'Manifest.xls');
 
+    }
+
+    public function tagOrange($program)
+    {
+        $pdf = PDF::LoadView('report.tagorange')->setPaper('a4', 'landscape');
+        return $pdf->stream('tagorange.pdf');
     }
 
     

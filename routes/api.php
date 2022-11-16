@@ -21,4 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['as' => 'api.'], function () {
     Route::get('roomlist', 'RoomlistController@roomlist'); 
     Route::get('manivest', 'RoomlistController@manivestVisa'); 
+    Route::get('tagorange/{program}', 'RoomlistController@tagOrange'); 
 });
