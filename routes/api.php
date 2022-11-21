@@ -22,4 +22,5 @@ Route::group(['as' => 'api.'], function () {
     Route::get('roomlist', 'RoomlistController@roomlist'); 
     Route::get('manivest', 'RoomlistController@manivestVisa'); 
     Route::get('tagorange/{program}', 'RoomlistController@tagOrange'); 
+    Route::post('suratperjanjian', 'JamaahController@suratPerjanjianUmrah'); 
 });

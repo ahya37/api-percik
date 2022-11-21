@@ -11,7 +11,6 @@
       display: inline-grid;
       grid-template-columns: auto auto auto auto;
       gap: 5px;
-      margin-top: -1px;
     }
 
     .grid-container > div {
@@ -24,6 +23,9 @@
       width: 100px !important;
       margin-left: -120px !important;
     }
+    /* .page-break {
+    page-break-after: always;
+} */
   </style>
 
   <body>
@@ -43,7 +45,7 @@
         >
           <div>
             <img
-              src="/public/assets/images/tag/polygontop.svg"
+              src="/assets/images/tag/polygontop.svg"
               class="polygon"
             />
             <p
@@ -77,7 +79,7 @@
                 font-family: Monospace;
                 margin-left: 50px;
                 margin-right: 5px;
-                margin-top: -60px;
+                margin-top: -200px;
                 font-size: 15px;
                 font-weight: bold;
                 text-align: right;
@@ -115,7 +117,7 @@
             "
           >
             <img
-              src="{{asset('assets/images/tag/pemb.jpeg')}}"
+              src="/"
               style="width: 100%; height: 100%; border-radius: 15px"
             />
           </div>
@@ -131,6 +133,7 @@
           </p>
         </div>
       </div>
+      <div class="page-break"></div>
     </div>
   </body>
 </html>
